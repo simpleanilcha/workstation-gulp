@@ -1,0 +1,13 @@
+$primary-color: #eee;
+$heading-color:#09c;
+body{
+	background: $primary-color;
+}
+
+h1{
+	color: $heading-color;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
