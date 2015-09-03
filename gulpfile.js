@@ -1,5 +1,6 @@
 var gulp = require ('gulp'),
-	uglify = require ('gulp-uglify');
+	uglify = require ('gulp-uglify'),
+	sass = require ('gulp-ruby-sass');
 
 // Scripts Task
 // Uglifies
@@ -10,9 +11,24 @@ gulp.task('scripts', function(){
 });
 
 // Styles Task
-// 
+// styles
+//gulp.task('styles', function(){
+//	console.log('Runs styles');
+//	});
+
+// sass Task
+// styles
 gulp.task('styles', function(){
-	console.log('Runs styles');
+	return sass('scss/', { style: 'compressed' })
+	.on('error', sass.logError)
+	.pipe(gulp.dest('css'));
 	});
 
-gulp.task('default', ['scripts', 'styles']);
+// Watch Task
+// Watches
+gulp.task('watch', function(){
+	gulp.watch('js/*.js', ['scripts']);
+	gulp.watch('scss/**/*.scss', ['styles']);
+	})
+
+gulp.task('default', ['scripts', 'styles', 'watch']);
