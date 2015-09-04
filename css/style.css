@@ -1,1 +1,19 @@
-body{background:#eee}h1{color:#09c;text-decoration:underline;text-transform:uppercase;font-size:36px}
+body {
+  background: #eee;
+}
+
+h1 {
+  color: #09c;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+a {
+  color: #f00;
+  -webkit-transition: color 1s;
+          transition: color 1s;
+}
+a:hover {
+  color: green;
+}

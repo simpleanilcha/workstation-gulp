@@ -28,6 +28,23 @@
 		transform: scale(1);
 		opacity:1;
 	}
+	.div-hello a{
+		margin:0 auto;
+		width:78px;
+		height:78px;
+		text-align:center;
+	}
+	.hello{
+		background: url(images/hottie-liked.png) no-repeat;
+		display:inline-block;		
+		opacity:0.4;
+		transition: all .3s ;
+		transform:scale(0.5);
+	}
+	.hello:hover{
+		transform:scale(1);
+		opacity:1;
+	}
     </style>
 </head>
 
@@ -36,6 +53,9 @@
         <h1>Hello, Gulp!</h1>
         <div class="hottie-test">
         	<img src="images/hottie-liked.png" alt="hh">
+        </div>
+        <div class="div-hello">
+        <a href="" class="hello"></a>
         </div>
         <a href="http://govuk-elements.herokuapp.com/#form-radio-buttons"> GOVUK elements and styles</a>
     </div>

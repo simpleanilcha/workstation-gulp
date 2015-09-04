@@ -11,3 +11,11 @@ h1{
 	font-size: 36px;
 }
 
+a{
+	color:#f00;
+	transition: color 1s;
+	&:hover{
+		color: green;
+	}
+}
+
